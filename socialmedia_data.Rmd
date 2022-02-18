@@ -1,0 +1,67 @@
+---
+title: "Socialmedia data generation code"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Describing the dataset
+
+This example dataset explores the associations between social media usage and happiness. The dataset could be used to demonstrate students key concepts of the scientific process in psychology such as scientific question, hypothesis creation, and operatinalization.
+
+# Describing the variables
+
+```{r}
+# Creating a simple codebook
+codebook <-
+  tibble(
+    name = c(
+      "participant_id",
+      "hours_weekly",
+      "n_followers",
+      "n_follow",
+      "n_likes_weekly",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_1",
+      "diener_sum"
+    ),
+    description = c(
+      "unique identifier of the participant",
+      "the number of hours the participant spends on social media weekly on average",
+      "number of followers on social media",
+      "number of people who the participant follows on socail media",
+      "number of likes participant recieves weekly on average",
+      "score on the 1 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 2 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 3 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 4 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 5 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 6 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 7 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "score on the 8 item (7 - totally agree, 1 - totally disagree) in the Diener Flourishing Scale",
+      "summarised score for the 8 items of the Diener Flourishing Scale"
+    )
+  )
+
+codebook
+```
+
+# Creating the dataset
+
+```{r}
+data <-
+  tibble(
+    participant_id = 1:500,
+    hours_weekly = 
+  )
+```
+
